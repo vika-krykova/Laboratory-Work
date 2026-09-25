@@ -32,6 +32,19 @@ API = {
     "commons": "https://commons.wikimedia.org/w/api.php",
 }
 
+LANG_MAP = {
+    "en": "en-GB",
+    "ru": "ru-RU",
+    "de": "de-DE",
+    "fr": "fr-FR",
+    "es": "es-ES",
+    "it": "it-IT",
+    "uk": "uk-UA",
+    "zh": "zh-CN",
+    "ja": "ja-JP",
+    "pl": "pl-PL",
+}
+
 
 def api_get(url, params, max_attempts=5):
     params.setdefault("format", "json")
@@ -45,7 +58,7 @@ def api_get(url, params, max_attempts=5):
 
             if response.status_code == 429:
                 wait = 10 * (attempt + 1)
-                print(f"  429, ждём {wait} сек (попытка {attempt + 1}/{max_attempts})...")
+                print(f"  429, ждем {wait} сек (попытка {attempt + 1}/{max_attempts})...")
                 time.sleep(wait)
                 continue
 
@@ -75,6 +88,35 @@ def extract_html(parse_data):
     return html
 
 
+def translate_text(text, source="auto", target="ru"):
+    if not text or not text.strip():
+        return text
+
+    if source == "auto":
+        source = "en"
+
+    source = LANG_MAP.get(source, source)
+    target = LANG_MAP.get(target, target)
+
+    try:
+        from deep_translator import MyMemoryTranslator
+        chunks = [text[i:i + 450] for i in range(0, len(text), 450)]
+        result = []
+        for i, chunk in enumerate(chunks):
+            if i > 0:
+                time.sleep(0.5)
+            try:
+                translated = MyMemoryTranslator(source=source, target=target).translate(chunk)
+                result.append(translated or chunk)
+            except Exception as e:
+                print(f"  Ошибка перевода куска: {e}")
+                result.append(chunk)
+        return " ".join(result)
+    except Exception as e:
+        print(f"  Ошибка перевода: {e}")
+        return text
+
+
 def search_wikipedia(query, lang):
     url = API["wikipedia"].format(lang=lang)
     data = api_get(url, {
@@ -87,7 +129,7 @@ def search_wikipedia(query, lang):
     return results[0]["title"] if results else None
 
 
-def get_wikipedia_article(title, lang, text_limit=5000):
+def get_wikipedia_article(title, lang, text_limit=5000, translate_to=None):
     url = API["wikipedia"].format(lang=lang)
     data = api_get(url, {
         "action": "parse",
@@ -121,9 +163,14 @@ def get_wikipedia_article(title, lang, text_limit=5000):
     external = parse.get("externallinks", [])
     title_final = parse.get("title", title)
 
+    if translate_to and lang != translate_to:
+        title_final = translate_text(title_final, source=lang, target=translate_to)
+        time.sleep(0.5)
+        text = translate_text(text[:text_limit], source=lang, target=translate_to)
+
     return {
         "title": title_final,
-        "url": f"https://{lang}.wikipedia.org/wiki/{quote(title_final.replace(' ', '_'))}",
+        "url": f"https://{lang}.wikipedia.org/wiki/{quote(parse.get('title', title).replace(' ', '_'))}",
         "text": text[:text_limit],
         "links": links,
         "images": images[:15],
@@ -408,6 +455,10 @@ def main():
                         help="Скачать картинку дня")
     parser.add_argument("--no-wiktionary", action="store_true",
                         help="Пропустить Викисловарь")
+    parser.add_argument("--translate", action="store_true",
+                        help="Автоперевод статьи на русский")
+    parser.add_argument("--translate-to", default="ru",
+                        help="Язык перевода, по умолчанию ru")
 
     args = parser.parse_args()
 
@@ -415,7 +466,11 @@ def main():
     output_dir = Path(args.outdir)
     output_dir.mkdir(exist_ok=True)
 
+    translate_to = args.translate_to if args.translate else None
+
     print(f"Запрос: «{query}» | язык: {args.lang}")
+    if translate_to:
+        print(f"Автоперевод: → {translate_to}")
 
     title = search_wikipedia(query, args.lang)
     if not title:
@@ -423,7 +478,9 @@ def main():
         return
     print(f"Wikipedia: {title}")
 
-    article = get_wikipedia_article(title, args.lang, text_limit=5000)
+    article = get_wikipedia_article(
+        title, args.lang, text_limit=5000, translate_to=translate_to
+    )
     if not article:
         print("Не удалось загрузить статью")
         return
@@ -448,6 +505,7 @@ def main():
     result = {
         "query": query,
         "lang": args.lang,
+        "translate_to": translate_to,
         "wikipedia": {
             "main_article": article,
             "related_articles": related,
@@ -468,7 +526,7 @@ def main():
 
     dot_path = output_dir / "graph.dot"
     nodes, edges = build_graph(articles, str(dot_path))
-    print(f"Граф: {dot_path} ({nodes} узлов, {edges} рёбер)")
+    print(f"Граф: {dot_path} ({nodes} узлов, {edges} ребер)")
 
     if args.potd:
         print("\nКартинка дня...")
