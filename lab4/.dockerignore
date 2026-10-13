@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+.cache/
+*.json
+*.csv
+.git/
+.gitignore
+README.md
+Dockerfile
+.dockerignore
+output/

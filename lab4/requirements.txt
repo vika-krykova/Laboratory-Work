@@ -1,0 +1,6 @@
+scrapy>=2.11
+scrapy-playwright
+playwright
+ftfy
+itemadapter
+scrapy-user-agents
