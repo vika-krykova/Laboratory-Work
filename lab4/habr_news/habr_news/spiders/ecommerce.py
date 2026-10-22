@@ -12,7 +12,7 @@ class EcommerceSpider(scrapy.Spider):
         'ROBOTSTXT_OBEY': False,
     }
 
-    MAX_PAGES = 10
+    MAX_PAGES = 22
 
     def closed(self, reason):
         stats = self.crawler.stats.get_stats()

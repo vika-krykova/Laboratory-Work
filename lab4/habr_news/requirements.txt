@@ -4,3 +4,11 @@ playwright
 ftfy
 itemadapter
 scrapy-user-agents
+pandas
+numpy
+matplotlib
+pymorphy3
+gensim
+pyLDAvis
+scikit-learn
+wordcloud

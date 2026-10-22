@@ -8,7 +8,7 @@ class NewsSpider(scrapy.Spider):
     allowed_domains = ['habr.com']
     start_urls = ['https://habr.com/ru/articles/']
 
-    MAX_PAGES = 6
+    MAX_PAGES = 12
 
     def closed(self, reason):
         stats = self.crawler.stats.get_stats()
