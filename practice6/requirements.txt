@@ -1,0 +1,13 @@
+yt-dlp
+opencv-python
+numpy
+pandas
+scikit-learn
+matplotlib
+openai-whisper
+ultralytics
+pymorphy3
+pymorphy3-dicts-ru
+hdbscan
+requests
+certifi
