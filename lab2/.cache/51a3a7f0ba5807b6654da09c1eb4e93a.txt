@@ -1,0 +1,1 @@
+__ERROR__:HTTPSConnectionPool(host='www.steel-news.ru', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.steel-news.ru', port=443): Failed to resolve 'www.steel-news.ru' ([Errno -2] Name or service not known)"))
