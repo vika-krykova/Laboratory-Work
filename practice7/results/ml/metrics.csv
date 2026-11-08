@@ -1,0 +1,217 @@
+dataset,model,segment,metric,K,value,ci95,n_users
+movielens,popular,all,precision,5,0.02422,0.00628,545
+movielens,popular,all,recall,5,0.03602,0.01031,545
+movielens,popular,all,map,5,0.02036,0.00613,545
+movielens,popular,all,ndcg,5,0.03413,0.00918,545
+movielens,popular,all,coverage,5,0.01890,,545
+movielens,popular,all,diversity_ild,5,0.94530,,545
+movielens,popular,all,novelty,5,1.30648,,545
+movielens,popular,all,categories_per_list,5,8.38165,,545
+movielens,popular,all,categories_total,5,18.00000,,545
+movielens,popular,light(<= 60),precision,5,0.02754,0.00973,276
+movielens,popular,light(<= 60),recall,5,0.03816,0.01437,276
+movielens,popular,light(<= 60),map,5,0.02301,0.00915,276
+movielens,popular,light(<= 60),ndcg,5,0.03824,0.01371,276
+movielens,popular,light(<= 60),coverage,5,0.00575,,276
+movielens,popular,light(<= 60),diversity_ild,5,0.94978,,276
+movielens,popular,light(<= 60),novelty,5,1.18478,,276
+movielens,popular,light(<= 60),categories_per_list,5,8.53261,,276
+movielens,popular,light(<= 60),categories_total,5,14.00000,,276
+movielens,popular,heavy(> 60),precision,5,0.02082,0.00787,269
+movielens,popular,heavy(> 60),recall,5,0.03383,0.01483,269
+movielens,popular,heavy(> 60),map,5,0.01764,0.00814,269
+movielens,popular,heavy(> 60),ndcg,5,0.02991,0.01217,269
+movielens,popular,heavy(> 60),coverage,5,0.01890,,269
+movielens,popular,heavy(> 60),diversity_ild,5,0.94070,,269
+movielens,popular,heavy(> 60),novelty,5,1.43135,,269
+movielens,popular,heavy(> 60),categories_per_list,5,8.22677,,269
+movielens,popular,heavy(> 60),categories_total,5,18.00000,,269
+movielens,popular,all,precision,10,0.01872,0.00412,545
+movielens,popular,all,recall,10,0.05315,0.01227,545
+movielens,popular,all,map,10,0.02339,0.00640,545
+movielens,popular,all,ndcg,10,0.04251,0.00987,545
+movielens,popular,all,coverage,10,0.02932,,545
+movielens,popular,all,diversity_ild,10,0.94776,,545
+movielens,popular,all,novelty,10,1.48428,,545
+movielens,popular,all,categories_per_list,10,10.68991,,545
+movielens,popular,all,categories_total,10,18.00000,,545
+movielens,popular,light(<= 60),precision,10,0.02283,0.00654,276
+movielens,popular,light(<= 60),recall,10,0.06153,0.01791,276
+movielens,popular,light(<= 60),map,10,0.02705,0.00958,276
+movielens,popular,light(<= 60),ndcg,10,0.04964,0.01492,276
+movielens,popular,light(<= 60),coverage,10,0.00822,,276
+movielens,popular,light(<= 60),diversity_ild,10,0.94761,,276
+movielens,popular,light(<= 60),novelty,10,1.37418,,276
+movielens,popular,light(<= 60),categories_per_list,10,10.28986,,276
+movielens,popular,light(<= 60),categories_total,10,15.00000,,276
+movielens,popular,heavy(> 60),precision,10,0.01450,0.00492,269
+movielens,popular,heavy(> 60),recall,10,0.04455,0.01672,269
+movielens,popular,heavy(> 60),map,10,0.01963,0.00846,269
+movielens,popular,heavy(> 60),ndcg,10,0.03519,0.01282,269
+movielens,popular,heavy(> 60),coverage,10,0.02932,,269
+movielens,popular,heavy(> 60),diversity_ild,10,0.94792,,269
+movielens,popular,heavy(> 60),novelty,10,1.59725,,269
+movielens,popular,heavy(> 60),categories_per_list,10,11.10037,,269
+movielens,popular,heavy(> 60),categories_total,10,18.00000,,269
+movielens,content,all,precision,5,0.00183,0.00160,545
+movielens,content,all,recall,5,0.00306,0.00277,545
+movielens,content,all,map,5,0.00103,0.00097,545
+movielens,content,all,ndcg,5,0.00214,0.00193,545
+movielens,content,all,coverage,5,0.09945,,545
+movielens,content,all,diversity_ild,5,0.25065,,545
+movielens,content,all,novelty,5,5.41631,,545
+movielens,content,all,categories_per_list,5,5.90826,,545
+movielens,content,all,categories_total,5,17.00000,,545
+movielens,content,light(<= 60),precision,5,0.00290,0.00283,276
+movielens,content,light(<= 60),recall,5,0.00423,0.00416,276
+movielens,content,light(<= 60),map,5,0.00143,0.00151,276
+movielens,content,light(<= 60),ndcg,5,0.00312,0.00312,276
+movielens,content,light(<= 60),coverage,5,0.09452,,276
+movielens,content,light(<= 60),diversity_ild,5,0.25322,,276
+movielens,content,light(<= 60),novelty,5,5.26382,,276
+movielens,content,light(<= 60),categories_per_list,5,5.59783,,276
+movielens,content,light(<= 60),categories_total,5,17.00000,,276
+movielens,content,heavy(> 60),precision,5,0.00074,0.00146,269
+movielens,content,heavy(> 60),recall,5,0.00186,0.00364,269
+movielens,content,heavy(> 60),map,5,0.00062,0.00121,269
+movielens,content,heavy(> 60),ndcg,5,0.00114,0.00223,269
+movielens,content,heavy(> 60),coverage,5,0.04521,,269
+movielens,content,heavy(> 60),diversity_ild,5,0.24801,,269
+movielens,content,heavy(> 60),novelty,5,5.57277,,269
+movielens,content,heavy(> 60),categories_per_list,5,6.22677,,269
+movielens,content,heavy(> 60),categories_total,5,17.00000,,269
+movielens,content,all,precision,10,0.00202,0.00118,545
+movielens,content,all,recall,10,0.00639,0.00393,545
+movielens,content,all,map,10,0.00153,0.00106,545
+movielens,content,all,ndcg,10,0.00377,0.00233,545
+movielens,content,all,coverage,10,0.14658,,545
+movielens,content,all,diversity_ild,10,0.28800,,545
+movielens,content,all,novelty,10,5.44712,,545
+movielens,content,all,categories_per_list,10,6.85505,,545
+movielens,content,all,categories_total,10,17.00000,,545
+movielens,content,light(<= 60),precision,10,0.00362,0.00221,276
+movielens,content,light(<= 60),recall,10,0.01081,0.00686,276
+movielens,content,light(<= 60),map,10,0.00242,0.00172,276
+movielens,content,light(<= 60),ndcg,10,0.00633,0.00405,276
+movielens,content,light(<= 60),coverage,10,0.14219,,276
+movielens,content,light(<= 60),diversity_ild,10,0.28821,,276
+movielens,content,light(<= 60),novelty,10,5.33416,,276
+movielens,content,light(<= 60),categories_per_list,10,6.60507,,276
+movielens,content,light(<= 60),categories_total,10,17.00000,,276
+movielens,content,heavy(> 60),precision,10,0.00037,0.00073,269
+movielens,content,heavy(> 60),recall,10,0.00186,0.00364,269
+movielens,content,heavy(> 60),map,10,0.00062,0.00121,269
+movielens,content,heavy(> 60),ndcg,10,0.00114,0.00223,269
+movielens,content,heavy(> 60),coverage,10,0.07315,,269
+movielens,content,heavy(> 60),diversity_ild,10,0.28779,,269
+movielens,content,heavy(> 60),novelty,10,5.56302,,269
+movielens,content,heavy(> 60),categories_per_list,10,7.11152,,269
+movielens,content,heavy(> 60),categories_total,10,17.00000,,269
+movielens,svd,all,precision,5,0.00954,0.00358,545
+movielens,svd,all,recall,5,0.01205,0.00470,545
+movielens,svd,all,map,5,0.00670,0.00315,545
+movielens,svd,all,ndcg,5,0.01236,0.00509,545
+movielens,svd,all,coverage,5,0.04986,,545
+movielens,svd,all,diversity_ild,5,0.96475,,545
+movielens,svd,all,novelty,5,3.14853,,545
+movielens,svd,all,categories_per_list,5,7.79817,,545
+movielens,svd,all,categories_total,5,19.00000,,545
+movielens,svd,light(<= 60),precision,5,0.01232,0.00568,276
+movielens,svd,light(<= 60),recall,5,0.01606,0.00777,276
+movielens,svd,light(<= 60),map,5,0.00896,0.00523,276
+movielens,svd,light(<= 60),ndcg,5,0.01631,0.00828,276
+movielens,svd,light(<= 60),coverage,5,0.02959,,276
+movielens,svd,light(<= 60),diversity_ild,5,0.96291,,276
+movielens,svd,light(<= 60),novelty,5,2.95758,,276
+movielens,svd,light(<= 60),categories_per_list,5,7.71739,,276
+movielens,svd,light(<= 60),categories_total,5,19.00000,,276
+movielens,svd,heavy(> 60),precision,5,0.00669,0.00431,269
+movielens,svd,heavy(> 60),recall,5,0.00793,0.00518,269
+movielens,svd,heavy(> 60),map,5,0.00439,0.00345,269
+movielens,svd,heavy(> 60),ndcg,5,0.00831,0.00583,269
+movielens,svd,heavy(> 60),coverage,5,0.04630,,269
+movielens,svd,heavy(> 60),diversity_ild,5,0.96664,,269
+movielens,svd,heavy(> 60),novelty,5,3.34446,,269
+movielens,svd,heavy(> 60),categories_per_list,5,7.88104,,269
+movielens,svd,heavy(> 60),categories_total,5,19.00000,,269
+movielens,svd,all,precision,10,0.00844,0.00250,545
+movielens,svd,all,recall,10,0.02208,0.00675,545
+movielens,svd,all,map,10,0.00802,0.00326,545
+movielens,svd,all,ndcg,10,0.01697,0.00558,545
+movielens,svd,all,coverage,10,0.07014,,545
+movielens,svd,all,diversity_ild,10,0.96563,,545
+movielens,svd,all,novelty,10,3.25157,,545
+movielens,svd,all,categories_per_list,10,11.04220,,545
+movielens,svd,all,categories_total,10,19.00000,,545
+movielens,svd,light(<= 60),precision,10,0.00942,0.00360,276
+movielens,svd,light(<= 60),recall,10,0.02488,0.00982,276
+movielens,svd,light(<= 60),map,10,0.01007,0.00537,276
+movielens,svd,light(<= 60),ndcg,10,0.02034,0.00881,276
+movielens,svd,light(<= 60),coverage,10,0.04329,,276
+movielens,svd,light(<= 60),diversity_ild,10,0.96438,,276
+movielens,svd,light(<= 60),novelty,10,3.06467,,276
+movielens,svd,light(<= 60),categories_per_list,10,10.96377,,276
+movielens,svd,light(<= 60),categories_total,10,19.00000,,276
+movielens,svd,heavy(> 60),precision,10,0.00743,0.00346,269
+movielens,svd,heavy(> 60),recall,10,0.01921,0.00924,269
+movielens,svd,heavy(> 60),map,10,0.00592,0.00364,269
+movielens,svd,heavy(> 60),ndcg,10,0.01350,0.00678,269
+movielens,svd,heavy(> 60),coverage,10,0.06603,,269
+movielens,svd,heavy(> 60),diversity_ild,10,0.96691,,269
+movielens,svd,heavy(> 60),novelty,10,3.44334,,269
+movielens,svd,heavy(> 60),categories_per_list,10,11.12268,,269
+movielens,svd,heavy(> 60),categories_total,10,19.00000,,269
+movielens,als,all,precision,5,0.02862,0.00723,545
+movielens,als,all,recall,5,0.04465,0.01158,545
+movielens,als,all,map,5,0.02196,0.00695,545
+movielens,als,all,ndcg,5,0.03710,0.00961,545
+movielens,als,all,coverage,5,0.15562,,545
+movielens,als,all,diversity_ild,5,0.95210,,545
+movielens,als,all,novelty,5,2.52229,,545
+movielens,als,all,categories_per_list,5,8.53028,,545
+movielens,als,all,categories_total,5,19.00000,,545
+movielens,als,light(<= 60),precision,5,0.03478,0.01187,276
+movielens,als,light(<= 60),recall,5,0.05616,0.01890,276
+movielens,als,light(<= 60),map,5,0.02808,0.01150,276
+movielens,als,light(<= 60),ndcg,5,0.04603,0.01540,276
+movielens,als,light(<= 60),coverage,5,0.09836,,276
+movielens,als,light(<= 60),diversity_ild,5,0.94732,,276
+movielens,als,light(<= 60),novelty,5,2.27093,,276
+movielens,als,light(<= 60),categories_per_list,5,8.56159,,276
+movielens,als,light(<= 60),categories_total,5,19.00000,,276
+movielens,als,heavy(> 60),precision,5,0.02230,0.00808,269
+movielens,als,heavy(> 60),recall,5,0.03284,0.01309,269
+movielens,als,heavy(> 60),map,5,0.01567,0.00762,269
+movielens,als,heavy(> 60),ndcg,5,0.02794,0.01130,269
+movielens,als,heavy(> 60),coverage,5,0.13260,,269
+movielens,als,heavy(> 60),diversity_ild,5,0.95700,,269
+movielens,als,heavy(> 60),novelty,5,2.78019,,269
+movielens,als,heavy(> 60),categories_per_list,5,8.49814,,269
+movielens,als,heavy(> 60),categories_total,5,19.00000,,269
+movielens,als,all,precision,10,0.02771,0.00490,545
+movielens,als,all,recall,10,0.08676,0.01625,545
+movielens,als,all,map,10,0.02885,0.00733,545
+movielens,als,all,ndcg,10,0.05626,0.01083,545
+movielens,als,all,coverage,10,0.22055,,545
+movielens,als,all,diversity_ild,10,0.95509,,545
+movielens,als,all,novelty,10,2.63922,,545
+movielens,als,all,categories_per_list,10,11.42936,,545
+movielens,als,all,categories_total,10,19.00000,,545
+movielens,als,light(<= 60),precision,10,0.03514,0.00782,276
+movielens,als,light(<= 60),recall,10,0.10809,0.02500,276
+movielens,als,light(<= 60),map,10,0.03660,0.01198,276
+movielens,als,light(<= 60),ndcg,10,0.07034,0.01708,276
+movielens,als,light(<= 60),coverage,10,0.14822,,276
+movielens,als,light(<= 60),diversity_ild,10,0.95228,,276
+movielens,als,light(<= 60),novelty,10,2.39598,,276
+movielens,als,light(<= 60),categories_per_list,10,11.36594,,276
+movielens,als,light(<= 60),categories_total,10,19.00000,,276
+movielens,als,heavy(> 60),precision,10,0.02007,0.00571,269
+movielens,als,heavy(> 60),recall,10,0.06487,0.02036,269
+movielens,als,heavy(> 60),map,10,0.02089,0.00824,269
+movielens,als,heavy(> 60),ndcg,10,0.04180,0.01300,269
+movielens,als,heavy(> 60),coverage,10,0.18795,,269
+movielens,als,heavy(> 60),diversity_ild,10,0.95797,,269
+movielens,als,heavy(> 60),novelty,10,2.88879,,269
+movielens,als,heavy(> 60),categories_per_list,10,11.49442,,269
+movielens,als,heavy(> 60),categories_total,10,19.00000,,269

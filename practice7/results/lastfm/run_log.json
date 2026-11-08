@@ -1,0 +1,58 @@
+{
+ "args": {
+  "dataset": "lastfm",
+  "path": "data/hetrec2011-lastfm-2k",
+  "meta": null,
+  "max_rows": null,
+  "model": "popular,content,als",
+  "k": [
+   5,
+   10
+  ],
+  "evaluate": true,
+  "eda": false,
+  "output": "results/lastfm",
+  "seed": 42,
+  "min_interactions": 5,
+  "n_test": 5,
+  "min_history": 10,
+  "rel_threshold": 4.0,
+  "factors": 50,
+  "segment_threshold": null,
+  "mmr": [],
+  "cases": 2,
+  "sample_users": 20
+ },
+ "versions": {
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "pandas": "2.3.3",
+  "scikit-learn": "1.7.2",
+  "scikit-surprise": "1.1.5",
+  "implicit": "0.7.3"
+ },
+ "data": {
+  "users": 1859,
+  "items": 2823,
+  "interactions": 71355,
+  "sparsity": 0.9864032803622438,
+  "train": 62190,
+  "test": 9165,
+  "split": "per-user random leave-N-out (no timestamps)",
+  "load_sec": 3.5878186225891113,
+  "eval_users": 1833,
+  "segment_threshold": 36
+ },
+ "timings": {
+  "popular": {
+   "fit_sec": 0.0
+  },
+  "content": {
+   "fit_sec": 0.05
+  },
+  "als": {
+   "fit_sec": 0.36
+  }
+ }
+}

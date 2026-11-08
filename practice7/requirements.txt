@@ -1,0 +1,10 @@
+numpy
+scipy
+pandas
+scikit-learn
+matplotlib
+scikit-surprise
+implicit
+pytest
+requests
+certifi

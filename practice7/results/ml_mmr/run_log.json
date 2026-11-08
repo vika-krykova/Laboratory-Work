@@ -1,0 +1,55 @@
+{
+ "args": {
+  "dataset": "movielens",
+  "path": "data/ml-latest-small",
+  "meta": null,
+  "max_rows": null,
+  "model": "als",
+  "k": [
+   10
+  ],
+  "evaluate": true,
+  "eda": false,
+  "output": "results/ml_mmr",
+  "seed": 42,
+  "min_interactions": 5,
+  "n_test": 5,
+  "min_history": 10,
+  "rel_threshold": 4.0,
+  "factors": 50,
+  "segment_threshold": null,
+  "mmr": [
+   0.5,
+   0.7,
+   0.9
+  ],
+  "cases": 2,
+  "sample_users": 20
+ },
+ "versions": {
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "pandas": "2.3.3",
+  "scikit-learn": "1.7.2",
+  "scikit-surprise": "1.1.5",
+  "implicit": "0.7.3"
+ },
+ "data": {
+  "users": 610,
+  "items": 3650,
+  "interactions": 90274,
+  "sparsity": 0.9594547496070065,
+  "train": 87224,
+  "test": 3050,
+  "split": "per-user chronological",
+  "load_sec": 0.28620076179504395,
+  "eval_users": 545,
+  "segment_threshold": 60
+ },
+ "timings": {
+  "als": {
+   "fit_sec": 0.28
+  }
+ }
+}

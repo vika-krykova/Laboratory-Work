@@ -1,0 +1,24 @@
+{
+  "dataset": "movielens",
+  "n_users": 610,
+  "n_items": 3650,
+  "n_interactions": 90274,
+  "sparsity": 0.9594547496070065,
+  "density_pct": 4.054525039299349,
+  "interactions_per_user": {
+    "min": 12,
+    "median": 68.0,
+    "mean": 147.99016393442622,
+    "max": 2132
+  },
+  "interactions_per_item": {
+    "min": 5,
+    "median": 13.0,
+    "mean": 24.732602739726026,
+    "max": 329
+  },
+  "share_of_interactions_in_top1pct_items": 0.08469769811905975,
+  "items_with_empty_text_pct": 0.0,
+  "explicit": true,
+  "has_time": true
+}

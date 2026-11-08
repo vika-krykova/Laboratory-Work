@@ -1,0 +1,14 @@
+# Данные и веса моделей
+data/
+
+# Виртуальное окружение
+venv/
+.venv/
+
+# Кэши Python и тестов
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Настройки VS Code
+.vscode/

@@ -1,0 +1,109 @@
+dataset,model,segment,metric,K,value,ci95,n_users
+movielens,als,all,precision,10,0.02771,0.00490,545
+movielens,als,all,recall,10,0.08676,0.01625,545
+movielens,als,all,map,10,0.02885,0.00733,545
+movielens,als,all,ndcg,10,0.05626,0.01083,545
+movielens,als,all,coverage,10,0.22055,,545
+movielens,als,all,diversity_ild,10,0.95509,,545
+movielens,als,all,novelty,10,2.63922,,545
+movielens,als,all,categories_per_list,10,11.42936,,545
+movielens,als,all,categories_total,10,19.00000,,545
+movielens,als,light(<= 60),precision,10,0.03514,0.00782,276
+movielens,als,light(<= 60),recall,10,0.10809,0.02500,276
+movielens,als,light(<= 60),map,10,0.03660,0.01198,276
+movielens,als,light(<= 60),ndcg,10,0.07034,0.01708,276
+movielens,als,light(<= 60),coverage,10,0.14822,,276
+movielens,als,light(<= 60),diversity_ild,10,0.95228,,276
+movielens,als,light(<= 60),novelty,10,2.39598,,276
+movielens,als,light(<= 60),categories_per_list,10,11.36594,,276
+movielens,als,light(<= 60),categories_total,10,19.00000,,276
+movielens,als,heavy(> 60),precision,10,0.02007,0.00571,269
+movielens,als,heavy(> 60),recall,10,0.06487,0.02036,269
+movielens,als,heavy(> 60),map,10,0.02089,0.00824,269
+movielens,als,heavy(> 60),ndcg,10,0.04180,0.01300,269
+movielens,als,heavy(> 60),coverage,10,0.18795,,269
+movielens,als,heavy(> 60),diversity_ild,10,0.95797,,269
+movielens,als,heavy(> 60),novelty,10,2.88879,,269
+movielens,als,heavy(> 60),categories_per_list,10,11.49442,,269
+movielens,als,heavy(> 60),categories_total,10,19.00000,,269
+movielens,als+mmr0.5,all,precision,10,0.02679,0.00465,545
+movielens,als+mmr0.5,all,recall,10,0.08587,0.01608,545
+movielens,als+mmr0.5,all,map,10,0.02797,0.00697,545
+movielens,als+mmr0.5,all,ndcg,10,0.05540,0.01047,545
+movielens,als+mmr0.5,all,coverage,10,0.21644,,545
+movielens,als+mmr0.5,all,diversity_ild,10,0.97337,,545
+movielens,als+mmr0.5,all,novelty,10,2.67390,,545
+movielens,als+mmr0.5,all,categories_per_list,10,11.90275,,545
+movielens,als+mmr0.5,all,categories_total,10,19.00000,,545
+movielens,als+mmr0.5,light(<= 60),precision,10,0.03333,0.00737,276
+movielens,als+mmr0.5,light(<= 60),recall,10,0.10229,0.02361,276
+movielens,als+mmr0.5,light(<= 60),map,10,0.03542,0.01162,276
+movielens,als+mmr0.5,light(<= 60),ndcg,10,0.06820,0.01651,276
+movielens,als+mmr0.5,light(<= 60),coverage,10,0.14959,,276
+movielens,als+mmr0.5,light(<= 60),diversity_ild,10,0.97254,,276
+movielens,als+mmr0.5,light(<= 60),novelty,10,2.45287,,276
+movielens,als+mmr0.5,light(<= 60),categories_per_list,10,11.98551,,276
+movielens,als+mmr0.5,light(<= 60),categories_total,10,19.00000,,276
+movielens,als+mmr0.5,heavy(> 60),precision,10,0.02007,0.00552,269
+movielens,als+mmr0.5,heavy(> 60),recall,10,0.06902,0.02165,269
+movielens,als+mmr0.5,heavy(> 60),map,10,0.02032,0.00748,269
+movielens,als+mmr0.5,heavy(> 60),ndcg,10,0.04228,0.01261,269
+movielens,als+mmr0.5,heavy(> 60),coverage,10,0.18438,,269
+movielens,als+mmr0.5,heavy(> 60),diversity_ild,10,0.97423,,269
+movielens,als+mmr0.5,heavy(> 60),novelty,10,2.90069,,269
+movielens,als+mmr0.5,heavy(> 60),categories_per_list,10,11.81784,,269
+movielens,als+mmr0.5,heavy(> 60),categories_total,10,19.00000,,269
+movielens,als+mmr0.7,all,precision,10,0.02697,0.00474,545
+movielens,als+mmr0.7,all,recall,10,0.08511,0.01589,545
+movielens,als+mmr0.7,all,map,10,0.02822,0.00705,545
+movielens,als+mmr0.7,all,ndcg,10,0.05546,0.01053,545
+movielens,als+mmr0.7,all,coverage,10,0.22082,,545
+movielens,als+mmr0.7,all,diversity_ild,10,0.96671,,545
+movielens,als+mmr0.7,all,novelty,10,2.65977,,545
+movielens,als+mmr0.7,all,categories_per_list,10,11.79450,,545
+movielens,als+mmr0.7,all,categories_total,10,19.00000,,545
+movielens,als+mmr0.7,light(<= 60),precision,10,0.03406,0.00753,276
+movielens,als+mmr0.7,light(<= 60),recall,10,0.10350,0.02373,276
+movielens,als+mmr0.7,light(<= 60),map,10,0.03534,0.01163,276
+movielens,als+mmr0.7,light(<= 60),ndcg,10,0.06833,0.01646,276
+movielens,als+mmr0.7,light(<= 60),coverage,10,0.14959,,276
+movielens,als+mmr0.7,light(<= 60),diversity_ild,10,0.96559,,276
+movielens,als+mmr0.7,light(<= 60),novelty,10,2.42447,,276
+movielens,als+mmr0.7,light(<= 60),categories_per_list,10,11.87681,,276
+movielens,als+mmr0.7,light(<= 60),categories_total,10,19.00000,,276
+movielens,als+mmr0.7,heavy(> 60),precision,10,0.01970,0.00559,269
+movielens,als+mmr0.7,heavy(> 60),recall,10,0.06623,0.02086,269
+movielens,als+mmr0.7,heavy(> 60),map,10,0.02091,0.00778,269
+movielens,als+mmr0.7,heavy(> 60),ndcg,10,0.04225,0.01287,269
+movielens,als+mmr0.7,heavy(> 60),coverage,10,0.18740,,269
+movielens,als+mmr0.7,heavy(> 60),diversity_ild,10,0.96787,,269
+movielens,als+mmr0.7,heavy(> 60),novelty,10,2.90120,,269
+movielens,als+mmr0.7,heavy(> 60),categories_per_list,10,11.71004,,269
+movielens,als+mmr0.7,heavy(> 60),categories_total,10,19.00000,,269
+movielens,als+mmr0.9,all,precision,10,0.02752,0.00489,545
+movielens,als+mmr0.9,all,recall,10,0.08639,0.01625,545
+movielens,als+mmr0.9,all,map,10,0.02876,0.00730,545
+movielens,als+mmr0.9,all,ndcg,10,0.05604,0.01082,545
+movielens,als+mmr0.9,all,coverage,10,0.22082,,545
+movielens,als+mmr0.9,all,diversity_ild,10,0.95761,,545
+movielens,als+mmr0.9,all,novelty,10,2.64295,,545
+movielens,als+mmr0.9,all,categories_per_list,10,11.52110,,545
+movielens,als+mmr0.9,all,categories_total,10,19.00000,,545
+movielens,als+mmr0.9,light(<= 60),precision,10,0.03514,0.00782,276
+movielens,als+mmr0.9,light(<= 60),recall,10,0.10809,0.02500,276
+movielens,als+mmr0.9,light(<= 60),map,10,0.03639,0.01190,276
+movielens,als+mmr0.9,light(<= 60),ndcg,10,0.07014,0.01701,276
+movielens,als+mmr0.9,light(<= 60),coverage,10,0.14959,,276
+movielens,als+mmr0.9,light(<= 60),diversity_ild,10,0.95507,,276
+movielens,als+mmr0.9,light(<= 60),novelty,10,2.40160,,276
+movielens,als+mmr0.9,light(<= 60),categories_per_list,10,11.48913,,276
+movielens,als+mmr0.9,light(<= 60),categories_total,10,19.00000,,276
+movielens,als+mmr0.9,heavy(> 60),precision,10,0.01970,0.00568,269
+movielens,als+mmr0.9,heavy(> 60),recall,10,0.06413,0.02034,269
+movielens,als+mmr0.9,heavy(> 60),map,10,0.02093,0.00828,269
+movielens,als+mmr0.9,heavy(> 60),ndcg,10,0.04157,0.01306,269
+movielens,als+mmr0.9,heavy(> 60),coverage,10,0.18795,,269
+movielens,als+mmr0.9,heavy(> 60),diversity_ild,10,0.96021,,269
+movielens,als+mmr0.9,heavy(> 60),novelty,10,2.89059,,269
+movielens,als+mmr0.9,heavy(> 60),categories_per_list,10,11.55390,,269
+movielens,als+mmr0.9,heavy(> 60),categories_total,10,19.00000,,269

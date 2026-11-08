@@ -1,0 +1,163 @@
+dataset,model,segment,metric,K,value,ci95,n_users
+lastfm,popular,all,precision,5,0.05292,0.00504,1833
+lastfm,popular,all,recall,5,0.05292,0.00504,1833
+lastfm,popular,all,map,5,0.03271,0.00372,1833
+lastfm,popular,all,ndcg,5,0.05966,0.00596,1833
+lastfm,popular,all,coverage,5,0.00638,,1833
+lastfm,popular,all,diversity_ild,5,0.64125,,1833
+lastfm,popular,all,novelty,5,2.12614,,1833
+lastfm,popular,all,categories_per_list,5,8.13312,,1833
+lastfm,popular,all,categories_total,5,17.00000,,1833
+lastfm,popular,light(<= 36),precision,5,0.03138,0.00561,937
+lastfm,popular,light(<= 36),recall,5,0.03138,0.00561,937
+lastfm,popular,light(<= 36),map,5,0.01834,0.00388,937
+lastfm,popular,light(<= 36),ndcg,5,0.03440,0.00647,937
+lastfm,popular,light(<= 36),coverage,5,0.00461,,937
+lastfm,popular,light(<= 36),diversity_ild,5,0.63559,,937
+lastfm,popular,light(<= 36),novelty,5,2.08258,,937
+lastfm,popular,light(<= 36),categories_per_list,5,8.33831,,937
+lastfm,popular,light(<= 36),categories_total,5,12.00000,,937
+lastfm,popular,heavy(> 36),precision,5,0.07545,0.00822,896
+lastfm,popular,heavy(> 36),recall,5,0.07545,0.00822,896
+lastfm,popular,heavy(> 36),map,5,0.04774,0.00629,896
+lastfm,popular,heavy(> 36),ndcg,5,0.08606,0.00985,896
+lastfm,popular,heavy(> 36),coverage,5,0.00638,,896
+lastfm,popular,heavy(> 36),diversity_ild,5,0.64330,,896
+lastfm,popular,heavy(> 36),novelty,5,2.17169,,896
+lastfm,popular,heavy(> 36),categories_per_list,5,7.91853,,896
+lastfm,popular,heavy(> 36),categories_total,5,17.00000,,896
+lastfm,popular,all,precision,10,0.04277,0.00332,1833
+lastfm,popular,all,recall,10,0.08554,0.00664,1833
+lastfm,popular,all,map,10,0.03901,0.00402,1833
+lastfm,popular,all,ndcg,10,0.07715,0.00654,1833
+lastfm,popular,all,coverage,10,0.00992,,1833
+lastfm,popular,all,diversity_ild,10,0.68392,,1833
+lastfm,popular,all,novelty,10,2.29014,,1833
+lastfm,popular,all,categories_per_list,10,11.62630,,1833
+lastfm,popular,all,categories_total,10,25.00000,,1833
+lastfm,popular,light(<= 36),precision,10,0.02412,0.00362,937
+lastfm,popular,light(<= 36),recall,10,0.04824,0.00724,937
+lastfm,popular,light(<= 36),map,10,0.02137,0.00419,937
+lastfm,popular,light(<= 36),ndcg,10,0.04336,0.00711,937
+lastfm,popular,light(<= 36),coverage,10,0.00815,,937
+lastfm,popular,light(<= 36),diversity_ild,10,0.67499,,937
+lastfm,popular,light(<= 36),novelty,10,2.23277,,937
+lastfm,popular,light(<= 36),categories_per_list,10,11.13447,,937
+lastfm,popular,light(<= 36),categories_total,10,21.00000,,937
+lastfm,popular,heavy(> 36),precision,10,0.06228,0.00535,896
+lastfm,popular,heavy(> 36),recall,10,0.12455,0.01071,896
+lastfm,popular,heavy(> 36),map,10,0.05745,0.00676,896
+lastfm,popular,heavy(> 36),ndcg,10,0.11249,0.01065,896
+lastfm,popular,heavy(> 36),coverage,10,0.00992,,896
+lastfm,popular,heavy(> 36),diversity_ild,10,0.69162,,896
+lastfm,popular,heavy(> 36),novelty,10,2.35014,,896
+lastfm,popular,heavy(> 36),categories_per_list,10,12.14062,,896
+lastfm,popular,heavy(> 36),categories_total,10,25.00000,,896
+lastfm,content,all,precision,5,0.09013,0.00632,1833
+lastfm,content,all,recall,5,0.09013,0.00632,1833
+lastfm,content,all,map,5,0.05199,0.00453,1833
+lastfm,content,all,ndcg,5,0.09576,0.00704,1833
+lastfm,content,all,coverage,5,0.39355,,1833
+lastfm,content,all,diversity_ild,5,0.46496,,1833
+lastfm,content,all,novelty,5,6.01495,,1833
+lastfm,content,all,categories_per_list,5,6.67540,,1833
+lastfm,content,all,categories_total,5,227.00000,,1833
+lastfm,content,light(<= 36),precision,5,0.09242,0.00950,937
+lastfm,content,light(<= 36),recall,5,0.09242,0.00950,937
+lastfm,content,light(<= 36),map,5,0.05346,0.00684,937
+lastfm,content,light(<= 36),ndcg,5,0.09613,0.01028,937
+lastfm,content,light(<= 36),coverage,5,0.36380,,937
+lastfm,content,light(<= 36),diversity_ild,5,0.45202,,937
+lastfm,content,light(<= 36),novelty,5,6.38278,,937
+lastfm,content,light(<= 36),categories_per_list,5,6.77801,,937
+lastfm,content,light(<= 36),categories_total,5,226.00000,,937
+lastfm,content,heavy(> 36),precision,5,0.08772,0.00829,896
+lastfm,content,heavy(> 36),recall,5,0.08772,0.00829,896
+lastfm,content,heavy(> 36),map,5,0.05045,0.00591,896
+lastfm,content,heavy(> 36),ndcg,5,0.09538,0.00959,896
+lastfm,content,heavy(> 36),coverage,5,0.19447,,896
+lastfm,content,heavy(> 36),diversity_ild,5,0.49238,,896
+lastfm,content,heavy(> 36),novelty,5,5.63029,,896
+lastfm,content,heavy(> 36),categories_per_list,5,6.56808,,896
+lastfm,content,heavy(> 36),categories_total,5,112.00000,,896
+lastfm,content,all,precision,10,0.07250,0.00394,1833
+lastfm,content,all,recall,10,0.14501,0.00789,1833
+lastfm,content,all,map,10,0.06312,0.00486,1833
+lastfm,content,all,ndcg,10,0.12557,0.00753,1833
+lastfm,content,all,coverage,10,0.52426,,1833
+lastfm,content,all,diversity_ild,10,0.50171,,1833
+lastfm,content,all,novelty,10,6.06449,,1833
+lastfm,content,all,categories_per_list,10,9.08074,,1833
+lastfm,content,all,categories_total,10,290.00000,,1833
+lastfm,content,light(<= 36),precision,10,0.07396,0.00585,937
+lastfm,content,light(<= 36),recall,10,0.14792,0.01171,937
+lastfm,content,light(<= 36),map,10,0.06510,0.00732,937
+lastfm,content,light(<= 36),ndcg,10,0.12634,0.01099,937
+lastfm,content,light(<= 36),coverage,10,0.50266,,937
+lastfm,content,light(<= 36),diversity_ild,10,0.49166,,937
+lastfm,content,light(<= 36),novelty,10,6.41240,,937
+lastfm,content,light(<= 36),categories_per_list,10,9.38207,,937
+lastfm,content,light(<= 36),categories_total,10,287.00000,,937
+lastfm,content,heavy(> 36),precision,10,0.07098,0.00526,896
+lastfm,content,heavy(> 36),recall,10,0.14196,0.01051,896
+lastfm,content,heavy(> 36),map,10,0.06105,0.00636,896
+lastfm,content,heavy(> 36),ndcg,10,0.12476,0.01027,896
+lastfm,content,heavy(> 36),coverage,10,0.28303,,896
+lastfm,content,heavy(> 36),diversity_ild,10,0.52343,,896
+lastfm,content,heavy(> 36),novelty,10,5.70066,,896
+lastfm,content,heavy(> 36),categories_per_list,10,8.76562,,896
+lastfm,content,heavy(> 36),categories_total,10,132.00000,,896
+lastfm,als,all,precision,5,0.10551,0.00645,1833
+lastfm,als,all,recall,5,0.10551,0.00645,1833
+lastfm,als,all,map,5,0.05699,0.00447,1833
+lastfm,als,all,ndcg,5,0.10787,0.00703,1833
+lastfm,als,all,coverage,5,0.39214,,1833
+lastfm,als,all,diversity_ild,5,0.77722,,1833
+lastfm,als,all,novelty,5,4.50569,,1833
+lastfm,als,all,categories_per_list,5,9.99400,,1833
+lastfm,als,all,categories_total,5,316.00000,,1833
+lastfm,als,light(<= 36),precision,5,0.10203,0.00911,937
+lastfm,als,light(<= 36),recall,5,0.10203,0.00911,937
+lastfm,als,light(<= 36),map,5,0.05739,0.00651,937
+lastfm,als,light(<= 36),ndcg,5,0.10656,0.01012,937
+lastfm,als,light(<= 36),coverage,5,0.35565,,937
+lastfm,als,light(<= 36),diversity_ild,5,0.77659,,937
+lastfm,als,light(<= 36),novelty,5,4.79755,,937
+lastfm,als,light(<= 36),categories_per_list,5,10.19317,,937
+lastfm,als,light(<= 36),categories_total,5,304.00000,,937
+lastfm,als,heavy(> 36),precision,5,0.10915,0.00912,896
+lastfm,als,heavy(> 36),recall,5,0.10915,0.00912,896
+lastfm,als,heavy(> 36),map,5,0.05657,0.00611,896
+lastfm,als,heavy(> 36),ndcg,5,0.10923,0.00975,896
+lastfm,als,heavy(> 36),coverage,5,0.23557,,896
+lastfm,als,heavy(> 36),diversity_ild,5,0.78077,,896
+lastfm,als,heavy(> 36),novelty,5,4.20048,,896
+lastfm,als,heavy(> 36),categories_per_list,5,9.78571,,896
+lastfm,als,heavy(> 36),categories_total,5,183.00000,,896
+lastfm,als,all,precision,10,0.08985,0.00422,1833
+lastfm,als,all,recall,10,0.17971,0.00844,1833
+lastfm,als,all,map,10,0.07330,0.00497,1833
+lastfm,als,all,ndcg,10,0.14824,0.00763,1833
+lastfm,als,all,coverage,10,0.54198,,1833
+lastfm,als,all,diversity_ild,10,0.78663,,1833
+lastfm,als,all,novelty,10,4.60163,,1833
+lastfm,als,all,categories_per_list,10,15.60938,,1833
+lastfm,als,all,categories_total,10,416.00000,,1833
+lastfm,als,light(<= 36),precision,10,0.08132,0.00575,937
+lastfm,als,light(<= 36),recall,10,0.16265,0.01150,937
+lastfm,als,light(<= 36),map,10,0.07061,0.00715,937
+lastfm,als,light(<= 36),ndcg,10,0.13961,0.01087,937
+lastfm,als,light(<= 36),coverage,10,0.50762,,937
+lastfm,als,light(<= 36),diversity_ild,10,0.78752,,937
+lastfm,als,light(<= 36),novelty,10,4.92497,,937
+lastfm,als,light(<= 36),categories_per_list,10,16.03095,,937
+lastfm,als,light(<= 36),categories_total,10,395.00000,,937
+lastfm,als,heavy(> 36),precision,10,0.09877,0.00614,896
+lastfm,als,heavy(> 36),recall,10,0.19754,0.01228,896
+lastfm,als,heavy(> 36),map,10,0.07611,0.00688,896
+lastfm,als,heavy(> 36),ndcg,10,0.15727,0.01066,896
+lastfm,als,heavy(> 36),coverage,10,0.31456,,896
+lastfm,als,heavy(> 36),diversity_ild,10,0.78720,,896
+lastfm,als,heavy(> 36),novelty,10,4.26349,,896
+lastfm,als,heavy(> 36),categories_per_list,10,15.16853,,896
+lastfm,als,heavy(> 36),categories_total,10,248.00000,,896
