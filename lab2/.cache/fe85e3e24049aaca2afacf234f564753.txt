@@ -1,1 +1,0 @@
-__ERROR__:HTTPSConnectionPool(host='mmk.ru', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='mmk.ru', port=443) at 0x7fe8026e2770>, 'Connection to mmk.ru timed out. (connect timeout=30)'))
