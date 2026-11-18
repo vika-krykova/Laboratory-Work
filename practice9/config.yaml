@@ -1,0 +1,8 @@
+dataset: movielens
+paths:
+  raw_data: /tmp/ml-data
+  results: /tmp/results
+  quarantine: /tmp/quarantine
+limits:
+  k_metric: 5
+  min_interactions: 1
